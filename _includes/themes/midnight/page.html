@@ -1,9 +1,12 @@
-<div id="header">
-  <h1>{{ page.title }} <small>Supporting tagline</small></h1>
-</div>
-
 <div class="wrapper">
   <section>
+    <div id="title">
+      <h1>{{ title }}</h1>
+      <p>Design for the web to succeed and you too will succeed. </p>
+      <hr>
+      <span class="credits left">Link here: <a href="{{ url }}">{{ url }}</a></span>
+      <span class="credits right">Last updated: {{ date }}</span>
+    </div>
     {{ content }}
   </section>
 </div>

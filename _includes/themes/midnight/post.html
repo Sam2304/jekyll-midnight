@@ -9,8 +9,8 @@
     </div>
     {{ content }}
     <hr>
-    <div>
-      <span class="left">
+    <div style="text-align: center;">
+      <span style="float: left;">
         {% if page.previous %}
           <a href="{{ BASE_PATH }}{{ page.previous.url }}" title="{{ page.previous.title }}">&larr; Previous</a>
         {% else %}
@@ -20,7 +20,7 @@
       <span>
         <a href="{{ BASE_PATH }}{{ site.JB.archive_path }}">Archive</a>
       </span>
-      <span class="right">
+      <span style-"float: right;">
         {% if page.next %}
           <a href="{{ BASE_PATH }}{{ page.next.url }}" title="{{ page.next.title }}">Next &rarr;</a>
         {% else %}

@@ -32,10 +32,12 @@
 
     <div id="header">
       <nav>
-        <li class="title"><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1></li>
-        {% assign pages_list = site.pages %}
-        {% assign group = 'navigation' %}
-        {% include JB/pages_list %}
+        <h1><a href="{{ HOME_PATH }}">{{ site.title }}</a></h1>
+        <ul>
+          {% assign pages_list = site.pages %}
+          {% assign group = 'navigation' %}
+          {% include JB/pages_list %}
+      </ul>
       </nav>
     </div>
 

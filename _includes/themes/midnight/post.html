@@ -30,15 +30,14 @@
       </nav>
     </div>
     <div id="tags">
-      <p>
-        {% unless page.tags == empty %}
-          Tags: 
-          <ul style="display: inline;">
-          {% assign tags_list = page.tags %}
-          {% include JB/tags_list %}
-          </ul>
-        {% endunless %}
-      </p>
+      <br>
+      {% unless page.tags == empty %}
+        Tags: 
+        <ul style="display: inline;">
+        {% assign tags_list = page.tags %}
+        {% include JB/tags_list %}
+        </ul>
+      {% endunless %}
     </div>
   </section>
   <section>

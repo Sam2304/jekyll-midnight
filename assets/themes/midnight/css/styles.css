@@ -776,7 +776,6 @@ dt {
   font-size: 14px;
 }
 #header nav li.title a {
-  color: white;
   border: 0;
   -webkit-border-radius: 0;
   -moz-border-radius: 0;
@@ -793,10 +792,6 @@ dt {
   background: -o-linear-gradient(transparent, transparent);
   background: linear-gradient(transparent, transparent);
   background-color: transparent;
-  padding: 14px 12px;
-  margin-top: 6px;
-  line-height: 14px;
-  font-size: 14px;
   display: inline-block;
   text-align: center;
 }
@@ -819,6 +814,7 @@ dt {
 #header nav li.title {
   float: left;
   margin-right: 10px;
+  padding:  0;
   font-size: 21px;
 }
 

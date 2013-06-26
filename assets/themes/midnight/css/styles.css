@@ -794,7 +794,8 @@ dt {
   background-color: transparent;
   display: inline-block;
   text-align: center;
-  font-size: 1.4em;
+  font-size: 1.2em;
+  color: gray;
 }
 #header nav li.title a:hover {
   background: transparent;

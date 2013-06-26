@@ -1,9 +1,12 @@
-<div class="page-header">
-  <h1>{{ page.title }} <small>Supporting tagline</small></h1>
-</div>
-
-<div class="row">
-  <div class="span8">
+<div class="wrapper">
+  <section>
+    <div id="title">
+      <h1>{{ page.title }}</h1>
+      {% if page.subtitle %}<p>"{{ page.subtitle }}"</p>{% endif %}
+      <br><hr>
+      <span class="credits left">Written by: <a href="{{ author.github }}">{{ site.author.name }}</a></span>
+      <span class="credits right">Last updated: {{ page.date }}</span>
+    </div>
     {{ content }}
     <hr>
     <div class="pagination">
@@ -21,25 +24,21 @@
       {% endif %}
       </ul>
     </div>
-  </div>
-
-  <div class="span4">
+  </section>
+  <section>
     <h4>Published</h4>
     <div class="date"><span>{{ page.date | date_to_long_string }}</span></div>
 
-  {% unless page.tags == empty %}
-    <h4>Tags</h4>
-    <ul class="tag_box">
-    {% assign tags_list = page.tags %}
-    {% include JB/tags_list %}
-    </ul>
-  {% endunless %}
-  </div>
+    {% unless page.tags == empty %}
+      <h4>Tags</h4>
+      <ul class="tag_box">
+      {% assign tags_list = page.tags %}
+      {% include JB/tags_list %}
+      </ul>
+    {% endunless %}
+  </section>
+  <section>
+    {% include JB/comments %}
+  </section>
 </div>
 
-<div class="row">
-  <div class="span8">
-    <hr>
-    {% include JB/comments %}
-  </div>
-</div>

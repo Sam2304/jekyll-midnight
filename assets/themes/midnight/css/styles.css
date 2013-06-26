@@ -728,7 +728,7 @@ dt {
   text-shadow: 0px 1px 0px rgba(0, 0, 0, 0.2);
   font-size: 14px;
 }
-#header nav li.downloads a {
+#header nav li a {
   color: white;
   border: 1px solid #5d910b;
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #93bd20), color-stop(100%, #659e10));
@@ -752,7 +752,7 @@ dt {
   display: inline-block;
   text-align: center;
 }
-#header nav li.downloads a:hover {
+#header nav li a:hover {
   background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #749619), color-stop(100%, #527f0e));
   background: -webkit-linear-gradient(#749619, #527f0e);
   background: -moz-linear-gradient(#749619, #527f0e);
@@ -775,7 +775,7 @@ dt {
 #header nav li.title {
   float: right;
   margin-right: 10px;
-  font-size: 11px;
+  font-size: 21px;
 }
 
 section {

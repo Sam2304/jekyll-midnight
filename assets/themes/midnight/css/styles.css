@@ -794,6 +794,7 @@ dt {
   background-color: transparent;
   display: inline-block;
   text-align: center;
+  font-size: 2em;
 }
 #header nav li.title a:hover {
   background: transparent;
@@ -814,7 +815,6 @@ dt {
 #header nav li.title {
   float: left;
   margin-right: 10px;
-  font-size: 41px;
 }
 
 section {

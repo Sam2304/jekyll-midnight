@@ -29,15 +29,13 @@
       </span>
       </nav>
     </div>
-    <div>
-      <span class="credits right">
-              {% unless page.tags == empty %}
-        <ul style="display: inline-block;">
+    <div id="tags">
+      {% unless page.tags == empty %}
+        <ul>
         {% assign tags_list = page.tags %}
         {% include JB/tags_list %}
         </ul>
       {% endunless %}
-      </span>
     </div>
   </section>
   <section>

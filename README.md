@@ -1,8 +1,9 @@
-This is blog theme compatible with Jekyll-Bootstrap
+jekyll-midnight
+===============
 
-<http://jekyllbootstrap.com> for usage.
+A theme for the [Jekyll-Bootstrap](http://jekyllbootstrap.com/) static blog generator, directly ported from the [Github Pages Midnight theme](https://github.com/mattgraham/Midnight) by [Matt Graham](https://github.com/mattgraham) using the [Twitter-2.0 theme] as a template(https://github.com/gdagley/theme-twitter-2.0).
 
 Installation
 ------------
 
-    rake theme:install git="https://github.com/gdagley/theme-twitter-2.0"
+    rake theme:install git="https://github.com/blahah/jekyll-midnight"

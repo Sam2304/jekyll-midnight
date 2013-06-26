@@ -10,14 +10,9 @@
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-
-    <!-- Le styles -->
-    <link href="{{ ASSET_PATH }}/css/bootstrap.min.css" rel="stylesheet">
-    <style type="text/css" media="screen">
-      body {
-        padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
-      }
-    </style>
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="{{ ASSET_PATH }}/css/ie.css">
+    <![endif]-->
     <link href="{{ ASSET_PATH }}/css/styles.css" rel="stylesheet">
     <link href="{{ ASSET_PATH }}/css/pygment_trac.css" rel="stylesheet" type="text/css" media="all">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
@@ -34,17 +29,13 @@
 
   <body>
 
-    <div class="header">
-      <a class="brand" href="{{ HOME_PATH }}">{{ site.title }}</a>
-          <div class="nav-collapse">
-            <nav>
-              {% assign pages_list = site.pages %}
-              {% assign group = 'navigation' %}
-              {% include JB/pages_list %}
-            </nav>
-          </div><!--/.nav-collapse -->
-        </div>
-      </div>
+    <div id="header">
+      <nav>
+        <li class="fork"><a href="{{ HOME_PATH }}">{{ site.title }}</a></li>
+        {% assign pages_list = site.pages %}
+        {% assign group = 'navigation' %}
+        {% include JB/pages_list %}
+      </nav>
     </div>
 
     <div class="wrapper">

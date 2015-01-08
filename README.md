@@ -13,4 +13,4 @@ I've taken the Midnight theme and bastardised it somewhat to match the monokai
 Installation
 ------------
 
-    rake theme:install git="https://github.com/blahah/jekyll-midnight"
+    rake theme:install git="https://github.com/Sam2304/jekyll-monokai"
